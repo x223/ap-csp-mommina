@@ -1,3 +1,4 @@
+
 var strokeColor ='black';
 
 function setup() {
@@ -9,6 +10,7 @@ function draw() {
   if (mouseIsPressed){
     stroke(strokeColor);
     line(pmouseX, pmouseY, mouseX,mouseY);
+    strokeWeight(10);
 }
 }
 
