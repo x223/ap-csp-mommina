@@ -1,0 +1,23 @@
+var strokeColor ='black';
+
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
+  // background('green')
+  if (mouseIsPressed){
+    stroke(strokeColor);
+    ellipse(pmouseX, pmouseY, mouseX,mouseY);
+    strokeWeight(10);
+}
+}
+
+  function keyTyped() {
+  if (key === 'g') {
+    strokeColor = 'green';
+  } else if (key === 'r') {
+    strokeColor = '#E32173';
+    weight = 10;
+  }
+}
