@@ -1,0 +1,20 @@
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
+  background("white");
+  text("X = " + mouseX + " | " + "Y = " + mouseY,50,50);
+ellipse(200,200,200,200);//body
+ellipse(144,303,30,30);//front left foot
+ellipse(255,303,30,30);//front right foot
+ //ellipse(100,225,60,60);//head
+
+line(100,192,297,192);//shell 
+rect(125,160,50,25);
+rect(220,150,50,25);
+  
+
+rotate(PI/9.0);
+ellipse(200,180,30,60);//neck
+}
