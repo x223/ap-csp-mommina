@@ -1,0 +1,25 @@
+var r = random 
+
+function setup() {
+  createCanvas(720, 400); 
+  n = createInput ("What is your name ?");
+  n.position(10,10)
+  q = createInput ("What is the highest value ?");
+  q.position(10,40)
+  g = createInput ("What number do you think it is ?");
+  g.position(10,70)
+}
+
+function draw(){
+
+}
+
+/*while (g = r);
+    if (g < r);
+        print ("Too low!");
+        g = input ("What number do you think it is ?");
+    else if (g > r);
+        print ("Too high!");
+        g = input ("What number do you think it is ?");
+print ("You got it!");
+*/
