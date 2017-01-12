@@ -2,6 +2,7 @@ var number;
 var guess;
 var highestvalue;
 
+
 function setup() {
   createCanvas(720, 400); 
   number = random(1,highestvalue) 
@@ -18,17 +19,16 @@ guess = g.value();
 text(number, 10 ,50);
 answer(); 
 highestvalue = q.value();
-print (highestvalue)
+
 }
 
 function answer (){
     if( number < guess) {
-      print ("Too low!");
+    paragraph = createP("Too low")
         g = input ("What number do you think it is ?");
     } else if (number > guess); {
-      print ("Too high!");
-        g = input ("What number do you think it is ?");
-print ("You got it!");
+      	paragraph = createP("Too high!");
+        // g = input ("What number do you think it is ?");
+	paragraph = createP("You got it")
     }
   }
-
