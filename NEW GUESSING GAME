@@ -5,7 +5,7 @@ var highestvalue;
 
 function setup() {
   createCanvas(720, 400); 
-  number = random(1,highestvalue) 
+  number = int(random(1,10))
   n = createInput ("What is your name ?");
   n.position(10,10)
   q = createInput ("What is the highest value ?");
@@ -16,19 +16,22 @@ function setup() {
 
 function draw(){
 guess = g.value(); 
-text(number, 10 ,50);
+text(number,150 ,50);
 answer(); 
-highestvalue = q.value();
+// highestvalue = q.value();
 
 }
 
 function answer (){
     if( number < guess) {
-    paragraph = createP("Too low")
-        g = input ("What number do you think it is ?");
+      text ("Too high!",150,150);
+    // paragraph = createP("Too high")
+    // paragraph.position 
+    //     g = input ("What number do you think it is ?");
     } else if (number > guess); {
-      	paragraph = createP("Too high!");
-        // g = input ("What number do you think it is ?");
-	paragraph = createP("You got it")
+      text ("Too low!",100,100);
+      // 	paragraph = createP("Too low!");
+      //   // g = input ("What number do you think it is ?");
+// 	paragraph = createP("You got it")
     }
   }
